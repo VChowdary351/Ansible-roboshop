@@ -1,0 +1,12 @@
+- name: Install and run nginx
+  host: 54.173.195.236
+  become: yes
+  tasks: 
+  - name: nginx
+    ansibl.builtin.yum:
+      name: nginx
+      state: Installed
+  - name: start nginx
+    ansibl.builtin.service:
+      name: nginx
+      state: started

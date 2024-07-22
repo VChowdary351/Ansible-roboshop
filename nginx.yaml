@@ -1,5 +1,5 @@
 - name: Install and run nginx
-  host: 54.173.195.236
+  host: web
   become: yes
   tasks: 
   - name: nginx
